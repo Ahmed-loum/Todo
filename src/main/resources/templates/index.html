@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+
+</head>
+<body>
+
+<div th:replace="fragments :: header"></div>
+
+<div class="container">
+
+    <!-- Formulaire Ajout -->
+    <form th:action="@{/save}" method="post" th:object="${task}" class="task-form">
+        <input type="hidden" th:field="*{id}">
+        <input type="text" th:field="*{title}" placeholder="Title" required>
+        <input type="text" th:field="*{description}" placeholder="Description" required>
+        <button type="submit">Ajouter</button>
+    </form>
+
+    <!-- Liste des tâches -->
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Titre</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr th:each="t : ${tasks}">
+            <td th:text="${t.id}"></td>
+            <td th:text="${t.title}"></td>
+            <td th:text="${t.description}"></td>
+            <td>
+                <span th:text="${t.status}"
+                      th:classappend="${t.status == 'TERMINE'} ? 'done' : 'pending'">
+                </span>
+            </td>
+            <td>
+                <a th:href="@{/complete/{id}(id=${t.id})}" class="btn-complete">✔</a>
+                <a th:href="@{/edit/{id}(id=${t.id})}" class="btn-edit">✎</a>
+                <a th:href="@{/delete/{id}(id=${t.id})}" class="btn-delete">✖</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<div th:replace="fragments :: footer"></div>
+
+</body>
+</html>

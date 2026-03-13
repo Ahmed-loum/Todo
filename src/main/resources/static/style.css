@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+}
+
+.header {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.task-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.task-form input {
+    padding: 8px;
+    flex: 1;
+}
+
+.task-form button {
+    padding: 8px 15px;
+    background: #27ae60;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #34495e;
+    color: white;
+}
+
+.btn-complete {
+    color: green;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.btn-delete {
+    color: red;
+    font-weight: bold;
+}
+
+.done {
+    color: green;
+    font-weight: bold;
+}
+
+.pending {
+    color: orange;
+}
