@@ -104,8 +104,8 @@ En production, il est recommandé d'utiliser des identifiants sécurisés.
 ### 1. Cloner le projet
 
 ```
-git clone https://github.com/VOTRE-UTILISATEUR/NOM-DU-PROJET.git
-cd NOM-DU-PROJET
+git clone https://github.com/Ahmed-loum/Todo.git
+cd Todo
 ```
 
 ### 2. Créer la base PostgreSQL
@@ -171,7 +171,6 @@ spring.jpa.hibernate.ddl-auto=update
 
 ---
 
-# Auteur
 # Auteur
 
 Projet réalisé dans le cadre d'un apprentissage de **Spring Boot et PostgreSQL**.
