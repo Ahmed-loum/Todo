@@ -1,10 +1,10 @@
 # Todo Application - Spring Boot
 
 
-![Java](https://img.shields.io/badge/Java-21-blue)
-![Spring Boot](https://img.shields.io/badge/SpringBoot-3.4-brightgreen)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
-![Maven](https://img.shields.io/badge/Maven-Build-red)
+![Java](https://img.shields.io/badge/Java-21-orange?logo=openjdk)
+![Spring Boot](https://img.shields.io/badge/SpringBoot-3.4-brightgreen?logo=springboot)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue?logo=postgresql)
+![Maven](https://img.shields.io/badge/Maven-Build-red?logo=apachemaven)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 
@@ -13,6 +13,27 @@
 Application web de gestion de tâches développée avec **Spring Boot**, **Thymeleaf**, **Spring Data JPA** et **PostgreSQL**.
 
 Ce projet permet de gérer une liste de tâches avec une interface web simple et une persistance des données dans une base de données relationnelle.
+
+---
+
+# Technologies
+
+<p align="left">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="50"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="50"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="50"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" width="50"/>
+</p>
+
+* Java 21
+* Spring Boot 3.4
+* Spring MVC
+* Spring Data JPA
+* Hibernate
+* Thymeleaf
+* PostgreSQL
+* H2 Database (pour le développement)
+* Maven
 
 ---
 
@@ -34,20 +55,6 @@ Chaque tâche contient :
 * un statut (`EN_COURS` ou `TERMINE`)
 
 Les données sont persistées grâce à **Spring Data JPA** et **Hibernate**.
-
----
-
-# Technologies utilisées
-
-* Java 21
-* Spring Boot 3
-* Spring MVC
-* Spring Data JPA
-* Hibernate
-* Thymeleaf
-* PostgreSQL
-* H2 Database (pour le développement)
-* Maven
 
 ---
 
